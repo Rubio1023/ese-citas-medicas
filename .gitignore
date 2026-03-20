@@ -15,8 +15,10 @@
 node_modules/
 .npm
 .yarn/
-yarn.lock      # opcional, si usas npm como gestor principal
-package-lock.json  # opcional, algunos equipos SÍ lo suben
+yarn.lock
+
+# package-lock.json NO se ignora
+# garantiza versiones exactas para todo el equipo
 
 # ========================
 # LOGS
@@ -46,12 +48,12 @@ out/
 # ========================
 # BASE DE DATOS LOCAL
 # ========================
-*.sql
 *.sqlite
 *.sqlite3
 *.db
 dump.sql
 database/backups/
+*_backup.sql
 
 # ========================
 # ARCHIVOS DEL SISTEMA OPERATIVO
@@ -79,13 +81,12 @@ $RECYCLE.BIN/
 # ========================
 # EDITORES E IDEs
 # ========================
-# VS Code (configuración personal, no del equipo)
 .vscode/settings.json
 .vscode/launch.json
 .vscode/extensions.json
 .history/
 
-# JetBrains (WebStorm, IntelliJ)
+# JetBrains
 .idea/
 *.iml
 *.iws
@@ -138,7 +139,7 @@ ssl/
 certs/
 
 # ========================
-# DOCKER (si lo usas después)
+# DOCKER
 # ========================
 .dockerignore
 docker-compose.override.yml

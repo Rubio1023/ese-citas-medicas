@@ -1,0 +1,144 @@
+# ========================
+# VARIABLES DE ENTORNO
+# ========================
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+.env.test
+*.env
+
+# ========================
+# DEPENDENCIAS
+# ========================
+node_modules/
+.npm
+.yarn/
+yarn.lock      # opcional, si usas npm como gestor principal
+package-lock.json  # opcional, algunos equipos SÍ lo suben
+
+# ========================
+# LOGS
+# ========================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ========================
+# BUILD / COMPILADOS
+# ========================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+.parcel-cache/
+.vite/
+
+# ========================
+# BASE DE DATOS LOCAL
+# ========================
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+dump.sql
+database/backups/
+
+# ========================
+# ARCHIVOS DEL SISTEMA OPERATIVO
+# ========================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+
+# ========================
+# EDITORES E IDEs
+# ========================
+# VS Code (configuración personal, no del equipo)
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.history/
+
+# JetBrains (WebStorm, IntelliJ)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+\#*\#
+
+# ========================
+# TESTING Y COBERTURA
+# ========================
+coverage/
+.nyc_output/
+*.lcov
+test-results/
+playwright-report/
+
+# ========================
+# ARCHIVOS TEMPORALES
+# ========================
+tmp/
+temp/
+.tmp/
+*.tmp
+*.bak
+*.backup
+*.orig
+
+# ========================
+# UPLOADS / ARCHIVOS DE USUARIO
+# ========================
+uploads/
+public/uploads/
+storage/
+media/
+
+# ========================
+# CERTIFICADOS Y CLAVES
+# ========================
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+ssl/
+certs/
+
+# ========================
+# DOCKER (si lo usas después)
+# ========================
+.dockerignore
+docker-compose.override.yml

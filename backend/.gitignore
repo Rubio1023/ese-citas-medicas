@@ -1,0 +1,27 @@
+# =========================================================================
+# DEPENDENCIAS (No se suben, pesan mucho y se reconstruyen con npm install)
+# =========================================================================
+node_modules/
+
+# =========================================================================
+# SEGURIDAD Y PRIVACIDAD (¡CRÍTICO! Protege las credenciales de Supabase)
+# =========================================================================
+.env
+.env.local
+.env.production
+
+# =========================================================================
+# LOGS Y ERRORES (Archivos temporales que genera Node.js al fallar)
+# =========================================================================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================================================================
+# CONFIGURACIONES DE EDITORES / SISTEMA (Basura de VS Code o Linux/Debian)
+# =========================================================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
